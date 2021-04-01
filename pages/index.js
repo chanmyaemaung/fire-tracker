@@ -8,6 +8,7 @@ export default function Home() {
 	const [eventData, setEventData] = useState([]);
 	const [loading, setLoading] = useState(false);
 
+	// TODO: Put your NASA API Keys
 	const apiKey = process.env.NASA_API_KEY;
 	const baseUrl = `https://eonet.sci.gsfc.nasa.gov/api/v2.1/events?api_key=${apiKey}`;
 
