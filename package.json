@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@iconify/react": "^1.1.4",
+    "google-map-react": "^2.1.9",
     "next": "10.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@iconify/icons-mdi": "^1.1.13"
   }
 }
