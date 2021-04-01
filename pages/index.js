@@ -15,17 +15,21 @@ export default function Home() {
 	// TODO: Fetch Data
 	useEffect(() => {
 		const fetchEvent = async () => {
-			setLoading(true);
+			try {
+				setLoading(true);
 
-			const res = await fetch(baseUrl);
-			const { events } = await res.json();
+				const res = await fetch(baseUrl);
+				const { events } = await res.json();
 
-			setEventData(events);
+				setEventData(events);
 
-			setLoading(false);
+				setLoading(false);
+			} catch (error) {
+				alert(error.message);
+			}
 		};
 
-		fetchEvent();
+		return fetchEvent();
 	}, []);
 
 	return (
